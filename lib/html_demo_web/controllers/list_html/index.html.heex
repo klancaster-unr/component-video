@@ -1,0 +1,18 @@
+
+<h1>Employee List</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%= for e <- @employees do %>
+            <tr>
+                <td><%= e.name %></td>
+                <td><%= e.title %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
